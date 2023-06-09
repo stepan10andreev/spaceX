@@ -1,4 +1,8 @@
 .layout {
-  margin: 0 auto;
-  max-width: 1200px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/img/backgound-spaceX.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

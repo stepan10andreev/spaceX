@@ -1,12 +1,8 @@
 .header {
   padding: 0px 30px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
 }
 
-.header > a {
+.header a:first-child {
   margin-right: auto;
 }
 

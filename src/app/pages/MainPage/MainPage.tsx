@@ -6,10 +6,8 @@ import { Header } from '../../components/Header';
 
 export function MainPage() {
   return (
-    <MainPageContainer>
-        <Layout>
-          <Header />
-        </Layout>
-    </MainPageContainer>
+    <Layout>
+
+    </Layout>
   );
 }
