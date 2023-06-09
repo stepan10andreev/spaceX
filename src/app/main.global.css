@@ -1,7 +1,11 @@
 :root {
   --white:          hsl(0, 0%, 100%);
   --black:          #333333;
-  --orange:         orange;
+  --orange:         #ff4b00;
+  --orange-dark:    #c24400;
+  --blue:           #0d3b7d;
+  --blue-bright:    #377ee3;
+  --blue-dark:      #102e59;
   --greyF4:         hsl(0, 0%, 96%);
   --greyE4:         hsl(0, 0%, 89%);
   --greyDE:         hsla(0, 0%, 87%, 1);

@@ -6,7 +6,7 @@ export const Logo: FC = () => {
   return (
     <div className={styles.wrapper}>
       <a href='#' className={styles.link}>
-        <img src={image} alt="SpaceX Logo" />
+        <img className={styles.image} src={image} alt="SpaceX Logo" />
       </a>
       <div className={`${styles.corner} ${styles.firstCorner}`}></div>
       <div className={`${styles.corner} ${styles.secondCorner}`}></div>

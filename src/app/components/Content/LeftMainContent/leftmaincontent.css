@@ -1,0 +1,83 @@
+.wrapper h2, p {
+  margin: 0;
+}
+
+.title {
+  background: linear-gradient(45deg, var(--white) 20%, var(--orange) 90%, var(--orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 72px;
+  text-transform: uppercase;
+  line-height: 4rem;
+}
+
+
+.subtitle ~ span {
+  font-weight: 300;
+  font-size: 32px;
+}
+
+
+.button {
+  padding: 8px 16px;
+  font-size: 15px;
+  background: transparent;
+  border: 2px solid var(--blue);
+  border-image: linear-gradient(to right top, var(--blue), #16152a, var(--blue));
+  border-image-slice: 1;
+  transition: 0.2s;
+}
+
+.button:focus-visible,
+.button:hover {
+  outline: none;
+  border-image: linear-gradient(to right top, var(--blue-bright), #16152a, var(--blue-bright));
+  border-image-slice: 1;
+  color: var(--grey99);
+}
+
+.button:active {
+  color: var(--white);
+  background-color: var(--blue-dark);
+}
+
+.btnWrapper {
+  margin-top: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.corner {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid var(--greyE4);
+  width: 6px;
+  height: 6px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.secondCorner {
+  top:0;
+  right:0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.forthCorner {
+  bottom:0;
+  left:0;
+  border-top: none;
+  border-right: none;
+}
+
+.btnWrapper:hover .corner {
+  width: 10px;
+  height: 10px;
+  border-width: 3px;
+  border-color: var(--greyE4);
+}
