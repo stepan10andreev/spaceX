@@ -39,8 +39,8 @@
   align-items: center;
   border: 1px solid var(--grey42);
   float: left;
-  min-height: 80px;
-  max-width: 280px;
+  min-height: 120px;
+  max-width: 380px;
   width: 100%;
 }
 
@@ -48,8 +48,8 @@
   position: absolute;
   box-sizing: border-box;
   border: 1px solid var(--greyE4);
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   transition: width 0.3s, height 0.3s;
 }
 
@@ -83,8 +83,8 @@
 }
 
 .wrapper:hover .corner {
-  width: 12px;
-  height: 12px;
-  border-width: 3px;
+  width: 16px;
+  height: 16px;
+  border-width: 5px;
   border-color: var(--greyE4);
 }

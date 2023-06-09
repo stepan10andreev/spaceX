@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
   background: linear-gradient(45deg, var(--white) 20%, var(--orange) 90%, var(--orange));
   -webkit-background-clip: text;
@@ -22,8 +27,10 @@
 
 
 .button {
-  padding: 8px 16px;
+  padding: 15px 20px;
+  font-weight: 400;
   font-size: 15px;
+  width: 100%;
   background: transparent;
   border: 2px solid var(--blue);
   border-image: linear-gradient(to right top, var(--blue), #16152a, var(--blue));
@@ -34,9 +41,9 @@
 .button:focus-visible,
 .button:hover {
   outline: none;
-  border-image: linear-gradient(to right top, var(--blue-bright), #16152a, var(--blue-bright));
+  border-image: linear-gradient(to left top, var(--blue-bright), #16152a, var(--blue-bright));
   border-image-slice: 1;
-  color: var(--grey99);
+  color: var(--greyC4);
 }
 
 .button:active {
@@ -45,19 +52,21 @@
 }
 
 .btnWrapper {
-  margin-top: 60px;
+  margin-top: 100px;
   position: relative;
   display: flex;
   align-items: center;
   float: left;
+  width: 100%;
+  max-width: 225px;
 }
 
 .corner {
   position: absolute;
   box-sizing: border-box;
   border: 1px solid var(--greyE4);
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   transition: width 0.3s, height 0.3s;
 }
 
@@ -76,8 +85,8 @@
 }
 
 .btnWrapper:hover .corner {
-  width: 10px;
-  height: 10px;
-  border-width: 3px;
+  width: 14px;
+  height: 14px;
+  border-width: 4px;
   border-color: var(--greyE4);
 }

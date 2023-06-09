@@ -11,6 +11,7 @@
   --greyDE:         hsla(0, 0%, 87%, 1);
   --greyC4:         hsl(0, 0%, 77%);
   --grey99:         hsl(0, 0%, 60%);
+  --card-gradient:  #fff9f561;
   --grey42:         hsl(0, 0%, 26%);
   --font-family:    "WixMadeText";
 }

@@ -13,7 +13,7 @@ const containerStyles = {
   alignItems: 'center',
   justifyItems: 'center',
   justifyContent: 'space-between',
-  padding: '40px 0'
+  padding: '200px 0'
 }
 
 export function MainPage() {

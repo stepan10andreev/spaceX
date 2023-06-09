@@ -10,10 +10,10 @@ interface IInfoCard {
 export const InfoCard: FC<IInfoCard> = ({text1, text2, text3}) => {
 
   return (
-    <article>
-        <h3>
+    <article className={styles.card}>
+        <h3 className={styles.title}>
           {text1}
-          <div>{text2}</div>
+          <div className={styles.highlight}>{text2}</div>
           {text3}
         </h3>
     </article>
