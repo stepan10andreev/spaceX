@@ -1,8 +1,5 @@
 .header {
   padding: 0px 30px;
-}
-
-.header a:first-child {
-  margin-right: auto;
+  border-bottom: 1px solid var(--grey42);
 }
 

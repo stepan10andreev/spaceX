@@ -2,12 +2,12 @@
   --white:          hsl(0, 0%, 100%);
   --black:          #333333;
   --orange:         orange;
-  --gray42:         hsl(0, 0%, 26%);
-  --grayF4:         hsl(0, 0%, 96%);
-  --grayE4:         hsl(0, 0%, 89%);
-  --grayDE:         hsla(0, 0%, 87%, 1);
-  --grayC4:         hsl(0, 0%, 77%);
+  --greyF4:         hsl(0, 0%, 96%);
+  --greyE4:         hsl(0, 0%, 89%);
+  --greyDE:         hsla(0, 0%, 87%, 1);
+  --greyC4:         hsl(0, 0%, 77%);
   --grey99:         hsl(0, 0%, 60%);
+  --grey42:         hsl(0, 0%, 26%);
   --font-family:    "WixMadeText";
 }
 

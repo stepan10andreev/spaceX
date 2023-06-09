@@ -1,4 +1,84 @@
 .link {
-  padding: 10px;
-  border: 1px solid var(--gray42);
+  transition: 0.3s;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+
+.link:focus-visible  {
+  outline: none;
+}
+
+.link:focus-visible::after {
+  background-color: var(--greyC4);
+  opacity: 0.5;
+}
+
+.link:active::after {
+  background-color: var(--grey99);
+  opacity: 0.5;
+}
+
+.wrapper {
+  padding: 0 15px;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--grey42);
+  float: left;
+  min-height: 80px;
+}
+
+.corner {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid var(--greyE4);
+  width: 6px;
+  height: 6px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.firstCorner {
+  top:0;
+  left:0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.secondCorner {
+  top:0;
+  right:0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.thirdCorner {
+  bottom:0;
+  right:0;
+  border-top:
+  none;
+  border-left: none;
+}
+
+.forthCorner {
+  bottom:0;
+  left:0;
+  border-top: none;
+  border-right: none;
+}
+
+.wrapper:hover .corner {
+  width: 12px;
+  height: 12px;
+  border-width: 3px;
+  border-color: var(--greyE4);
 }

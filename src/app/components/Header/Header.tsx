@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './header.css';
 import { Logo } from './Logo';
 import { Container } from '../ui-components/Container';
+import { Navigation } from './Navigation';
 
 const containerStyles = {
   display: 'flex',
@@ -15,7 +16,7 @@ export function Header() {
     <header className={styles.header}>
       <Container stylesObj={containerStyles}>
         <Logo />
-        <nav>Nav</nav>
+        <Navigation />
       </Container>
     </header>
   );

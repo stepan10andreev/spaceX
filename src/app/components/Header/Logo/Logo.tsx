@@ -4,8 +4,14 @@ import image from '../../../../assets/img/logo-spaceX.png'
 
 export const Logo: FC = () => {
   return (
-    <a href='#' className={styles.link}>
-      <img src={image} alt="SpaceX Logo" />
-    </a>
+    <div className={styles.wrapper}>
+      <a href='#' className={styles.link}>
+        <img src={image} alt="SpaceX Logo" />
+      </a>
+      <div className={`${styles.corner} ${styles.firstCorner}`}></div>
+      <div className={`${styles.corner} ${styles.secondCorner}`}></div>
+      <div className={`${styles.corner} ${styles.thirdCorner}`}></div>
+      <div className={`${styles.corner} ${styles.forthCorner}`}></div>
+    </div>
   );
 }
