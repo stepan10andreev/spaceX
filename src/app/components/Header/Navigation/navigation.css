@@ -12,7 +12,7 @@
   padding: 10px;
   font-weight: 400;
   font-size: 22px;
-  color: var(--white);
+  color: var(--greyC4);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -50,6 +50,38 @@
 }
 
 .nav > .linkActive {
-  color: var(--grey99);
+  color: var(--blue-bright);
 }
 
+@media (max-width: 992px) {
+  .nav {
+    padding-top: 120px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 60px;
+    /* bottom: 0px; */
+    z-index: 293;
+    /* display: block; */
+    max-width: 400px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+    align-items: stretch;
+    background-color: #000000ba;
+    transform: translateX(-120%);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+
+  .nav > a {
+    font-size: 30px;
+  }
+}

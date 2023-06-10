@@ -1,6 +1,9 @@
-import React, { FC } from 'react';
+import React, { FC, useContext, useRef } from 'react';
 import styles from './navigation.css';
 import { NavLink } from 'react-router-dom';
+import { menuContext } from '../../../context/navContext';
+import classNames from 'classnames';
+import { useOnClickOutside } from '../../Hooks/useOnClickOutside';
 
 const navList = [
   {title: 'Главная', pathName: '/', id: '1'},
@@ -12,8 +15,22 @@ const navList = [
 ]
 
 export const Navigation: FC = () => {
+  const { isMenuOpen, toggleMenuMode } = useContext(menuContext);
+
+  const ref = useRef<HTMLElement>(null);
+
+  useOnClickOutside(ref, () => {
+    if (isMenuOpen) {
+      toggleMenuMode();
+    }
+  });
+
   return (
-    <nav className={styles.nav}>
+    <nav ref={ref} className={classNames(
+      styles.nav,
+      {[styles.active]: isMenuOpen},
+
+    )}>
       {navList.map(({id, pathName, title}) => (
         <NavLink key={id} to={pathName} className={({isActive}) => isActive ? styles.linkActive : styles.settingsLink}>
           {title}

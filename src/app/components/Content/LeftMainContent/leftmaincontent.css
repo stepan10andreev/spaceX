@@ -59,6 +59,7 @@
   float: left;
   width: 100%;
   max-width: 225px;
+  transition: 0.3s;
 }
 
 .corner {
@@ -89,4 +90,11 @@
   height: 14px;
   border-width: 4px;
   border-color: var(--greyE4);
+}
+
+@media (max-width: 1140px) {
+  .wrapper {
+    margin-bottom: 200px;
+    justify-self: center;
+  }
 }

@@ -10,17 +10,17 @@ import { RightMainContent } from '../../components/Content/RightMainContent';
 
 const containerStyles = {
   display: 'flex',
+  flexWrap: 'wrap',
   alignItems: 'center',
   justifyItems: 'center',
   justifyContent: 'space-between',
-  padding: '200px 0'
 }
 
 export function MainPage() {
   return (
     <Layout>
         <Content>
-          <Container stylesObj={containerStyles}>
+          <Container stylesObj={containerStyles as React.CSSProperties}>
             <LeftMainContent />
             <RightMainContent />
           </Container>

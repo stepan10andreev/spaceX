@@ -8,7 +8,7 @@ interface IContainer {
   stylesObj?: IClassObject
 }
 
-export const Container: FC<IContainer> = ({ children, stylesObj }) => {
+export const Container: FC<IContainer> = ({ children, stylesObj  }) => {
   return (
     <div className={styles.container} style={stylesObj && stylesObj}>
       {children}
