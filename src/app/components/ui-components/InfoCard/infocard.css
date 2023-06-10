@@ -84,7 +84,7 @@
 
 .title {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   color: var(--grey99);
 }
@@ -104,7 +104,7 @@
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .card {
     padding: 15px 20px;
   }
@@ -116,4 +116,4 @@
   .title {
     font-size: 17px;
   }
-}
+} */
