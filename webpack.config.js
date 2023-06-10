@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const FileManagerPlugin = require('filemanager-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'development';
@@ -100,7 +101,8 @@ module.exports = {
         },
         },
       }),
-      new HtmlWebpackPlugin( {template: path.resolve(__dirname, 'index.html'), favicon: './src/assets/favicon.ico'} ),
+      new HtmlWebpackPlugin( {template: path.resolve(__dirname, 'index.html'), /*favicon: './src/assets/favicon.ico'*/ } ),
+      new FaviconsWebpackPlugin({logo: 'src/assets/img/favicon.png',  prefix: 'favicons/'}),
       new ImageMinimizerPlugin({
         minimizer: {
           implementation: ImageMinimizerPlugin.imageminMinify,
