@@ -26,4 +26,3 @@ export const BurgerBtn = () => {
     </button>
   );
 }
-// isMenuOpen ? 'active' : ''

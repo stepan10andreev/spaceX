@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React, { FC } from 'react';
 import styles from './header.css';
 import { Logo } from './Logo';
 import { Container } from '../ui-components/Container';
 import { Navigation } from './Navigation';
 import { BurgerBtn } from '../ui-components/BurgerBtn';
-import { MenuContextProvider, menuContext } from '../../context/navContext';
+import { MenuContextProvider } from '../../context/navContext';
 
 const containerStyles = {
   display: 'flex',
@@ -15,8 +15,7 @@ const containerStyles = {
   justifyContent: 'center',
 }
 
-export function Header() {
-
+export const Header: FC = () => {
   return (
     <MenuContextProvider>
       <header className={styles.header}>

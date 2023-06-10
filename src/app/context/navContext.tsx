@@ -6,7 +6,7 @@ type menuContextType = {
 }
 
 export const menuContext = createContext<menuContextType>({
-  isMenuOpen: true,
+  isMenuOpen: false,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   toggleMenuMode: () => {},
 });

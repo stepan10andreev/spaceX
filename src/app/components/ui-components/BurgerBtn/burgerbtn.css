@@ -1,5 +1,5 @@
 .button {
-  display: block;
+  display: none;
   margin-right: auto;
   transform-origin: 16px 11px;
   float: left;
@@ -52,4 +52,12 @@
 .button.active span:nth-of-type(3) {
   transform: rotate(-45deg) translate(7px, -7px);
   width: 40px;
+}
+
+
+/* adaptive */
+@media (max-width: 992px) {
+  .button {
+    display: block;
+  }
 }

@@ -1,9 +1,0 @@
-.container {
-  /* width: 100%; */
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../../../assets/img/backgound-spaceX.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}

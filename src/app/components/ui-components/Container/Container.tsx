@@ -4,7 +4,7 @@ import styles from './container.css';
 type IClassObject = CSSProperties
 
 interface IContainer {
-  children?: React.ReactNode;
+  children: React.ReactNode;
   stylesObj?: IClassObject
 }
 
