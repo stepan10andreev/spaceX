@@ -26,10 +26,11 @@ export const Navigation: FC = () => {
   });
 
   return (
-    <nav ref={ref} className={classNames(
+    <nav
+      ref={ref}
+      className={classNames(
       styles.nav,
       {[styles.active]: isMenuOpen},
-
     )}>
       {navList.map(({id, pathName, title}) => (
         <NavLink key={id} to={pathName} className={({isActive}) => isActive ? styles.linkActive : styles.settingsLink}>
